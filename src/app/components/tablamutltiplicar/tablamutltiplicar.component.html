@@ -1,1 +1,37 @@
-<p>tablamutltiplicar works!</p>
+<h1>Tabla de multiplicar</h1>
+<form #multiplicarForm="ngForm">
+    <label for="cajanumero">
+        Numero a Multiplicar:
+    </label>
+    <input #cajanumero type="number" name="cajanumero" [(ngModel)]="num" />
+    <button (click)="multiplicar()">
+        Multiplicar
+    </button>
+</form>
+
+<hr />
+<div *ngIf="resultado.length > 0">
+    <table>
+        <thead>
+            <tr>
+                <th>Numero</th>
+                <th>Multiplicador</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let res of resultado; let i = index">
+                <td>
+                    {{i+1}}
+                </td>
+                <td>
+                    {{num}}
+                </td>
+                <td>
+                    {{res}}
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
