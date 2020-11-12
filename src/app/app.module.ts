@@ -11,7 +11,10 @@ import { GulagComponent } from './components/rutas/gulag/gulag.component';
 import { WindowsComponent } from './components/rutas/windows/windows.component';
 
 //DEBEMOS IMPORTAR LOS DOS NOMBRES ANTERERIORES DE app.rounting.ts
-import { appRoutingProviders, routing } from './app.routing'
+import { appRoutingProviders, routing } from './app.routing';
+import { MenuComponent } from './components/rutas/menu/menu.component';
+import { Error404Component } from './components/rutas/error404/error404.component';
+import { NumerodobleComponent } from './components/numerodoble/numerodoble.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { appRoutingProviders, routing } from './app.routing'
     HomeComponent,
     AtleticoComponent,
     GulagComponent,
-    WindowsComponent
+    WindowsComponent,
+    MenuComponent,
+    Error404Component,
+    NumerodobleComponent
   ],
   imports: [
     BrowserModule,
