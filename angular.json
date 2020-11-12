@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rutasangular"
+    }
+  },
+  "defaultProject": "rutasangular",
+  "cli": {
+    "analytics": false
+  }
 }

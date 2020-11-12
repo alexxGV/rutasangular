@@ -6,6 +6,7 @@ import { AtleticoComponent } from './components/rutas/atletico/atletico.componen
 import { GulagComponent } from './components/rutas/gulag/gulag.component';
 import { WindowsComponent } from './components/rutas/windows/windows.component';
 import { Error404Component } from './components/rutas/error404/error404.component';
+import { NumerodobleComponent } from './components/numerodoble/numerodoble.component';
 //ARRAY DE RUTAS
 //LAS RUTAS LLEVAN IMPLICITA LA /, NO HACE FALTA PONERLAS DESDE HOME
 //{path : "cine", component: Cine}
@@ -17,6 +18,8 @@ const appRoutes: Routes = [
     { path: "atletico", component: AtleticoComponent },
     { path: "gulag", component: GulagComponent },
     { path: "windows", component: WindowsComponent },
+    { path: "numerodoble", component: NumerodobleComponent },
+    { path: "numerodoble/:numero", component: NumerodobleComponent },
     { path: "**", component: Error404Component }
 ];
 

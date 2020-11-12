@@ -1,0 +1,12 @@
+<h1 style="color: blueviolet;">Ejemplo Routing parametros</h1>
+<button (click)="redirect(7)">Enviar 7</button>
+<button (click)="redirect(77)">Enviar 77</button>
+<button (click)="redirect(564)">Enviar 564</button>
+<div *ngIf="numero">
+    <h2 style="color: blue;">
+        El doble de {{numero}} es: {{doble}}
+    </h2>
+</div>
+<div *ngIf="!numero">
+    <h2 style="color: red;">No tenemos paramatros</h2>
+</div>
